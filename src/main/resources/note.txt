@@ -1,0 +1,5 @@
+1、exchange+routingKey->queue  - 消息模型
+
+2、生产端交换机+生产端路由->  延迟队列/死信队列  -----  死信交换机+死信路由 + （死信TTL）  -->  消费队列
+
+3、限流、业务服务模块异步解耦、并发消费配置      jms->spring的事件驱动模型->activemq-> kafka rabbitmq
